@@ -11,7 +11,8 @@ def print_menu():
     print("4 - Quit the program")
 
 def main():
-    while True:
+    choice = 0
+    while choice != 4:
         try:
             print_menu()
             choice = int(input("Your choice: "))
@@ -27,7 +28,7 @@ def main():
                     input("Press Enter to continue...")
                 case 4:
                     print("App is closing ...")
-                    break
+                    # break
                 case _:
                     print("Enter a valid choice.")
                     input("Press Enter to continue...")
